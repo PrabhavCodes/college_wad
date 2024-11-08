@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
+body {
+    background-color: aliceblue;
+}
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #ffffff;
+    background-color:aliceblue;
     height: 70px; 
 }
 
@@ -19,7 +22,6 @@
     color: rgb(0, 0, 0);
 }
 
-/* Adjust navlinks container */
 .navlinks ul {
     list-style: none;
     display: flex;
@@ -32,7 +34,7 @@
 
 .auth {
     display: flex;
-    gap: 1rem; /* Space between the signup and login buttons */
+    gap: 1rem; 
 }
 
 
@@ -43,34 +45,34 @@ ul a {
     font-size: 20px;
 }
 
-/* Additional styling for hover effects */
+
 .navlinks a:hover,
 button a:hover {
-    color: #161616; /* Lighten color on hover */
+    color: #161616;
 }
 
 
 .image {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically if there's additional space */
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding-top: 1rem; /* Add some spacing below the navbar */
+    padding-top: 1rem;
 }
 
-/* Centered image styling */
+
 .image img {
-    width: 80%; /* Adjust the width as needed (e.g., 80% of the container width) */
-    max-width: 900px; /* Set a max-width to prevent it from growing too large */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%; 
+    max-width: 900px; 
+    height: auto;
 }
 
 
 .heroSection {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center-aligns content horizontally */
-    text-align: center; /* Center-aligns text within hero section */
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
     margin-top: 50px;
 }
 
@@ -81,13 +83,13 @@ button a:hover {
 
 .heroSection p {
     font-size: 1.6rem;
-    margin-bottom: 2rem; /* Adds space below paragraph */
+    margin-bottom: 2rem;
 }
 
 .buttonWrapper {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Space between buttons */
+    gap: 30px; 
     margin-top: 1rem;
 }
 
@@ -107,4 +109,87 @@ button a:hover {
 
 .Bt1 {
     margin-right: 30px;
+}
+
+/*this is section2*/
+.Section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.Section2 h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.cardSection {
+    display: flex;
+    gap: 20px; /* Space between each card */
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Adds hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Style for the rating to make it stand out */
+.card .rating {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #666;
+    background-color: #f4f4f4; /* Light background to stand out */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #333;
 }
