@@ -1,18 +1,14 @@
-/* Reset styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-
 }
 
-/* Body Styling */
 body {
-    background-color: #6f7681;
+    background-color: #dedede;
 }
 
-/* Navigation Bar */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -80,7 +76,6 @@ body {
     text-align: center;
 }
 
-/* Signup Card Elements */
 h2 {
     margin-bottom: 20px;
     color: #333;

@@ -4,77 +4,107 @@
     box-sizing: border-box;
 }
 
-body {
-    position: relative;
-    background-image: url('./public/images.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity */
-    z-index: -1; /* Keeps the overlay behind content */
-}
-
-
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
     background-color: #ffffff;
-    padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 70px; 
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #000;
-    cursor: pointer;
+    color: rgb(0, 0, 0);
 }
 
+/* Adjust navlinks container */
 .navlinks ul {
-    display: flex;
-    gap: 2rem;
     list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Increase gap for better spacing */
 }
 
-.navlinks ul li {
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.navlinks li {
+    color: rgb(0, 0, 0);
 }
 
-.navlinks ul li:hover {
-    background-color: #ddd;
+.auth {
+    display: flex;
+    gap: 1rem; /* Space between the signup and login buttons */
 }
 
-.auth button {
-    padding: 8px 16px;
-    font-size: 16px;
-    margin-left: 10px;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    background-color: #f1f1f1;
-    color: #000;
-    transition: background-color 0.3s, color 0.3s;
+
+
+ul a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 
-.auth button:hover {
-    background-color: #007bff;
-    color: #fff;
+/* Additional styling for hover effects */
+.navlinks a:hover,
+button a:hover {
+    color: #161616; /* Lighten color on hover */
 }
 
-.Heroimage {
+
+.image {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if there's additional space */
+    width: 100%;
+    padding-top: 1rem; /* Add some spacing below the navbar */
+}
+
+/* Centered image styling */
+.image img {
+    width: 80%; /* Adjust the width as needed (e.g., 80% of the container width) */
+    max-width: 900px; /* Set a max-width to prevent it from growing too large */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.heroSection {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-aligns content horizontally */
+    text-align: center; /* Center-aligns text within hero section */
+    margin-top: 50px;
+}
+
+.heroSection h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.heroSection p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem; /* Adds space below paragraph */
+}
+
+.buttonWrapper {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    gap: 30px; /* Space between buttons */
+    margin-top: 1rem;
+}
+
+.heroSection button {
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.heroSection button:hover{
+    background-color: #3a3a3a;
+    color: white;
+}
+
+.Bt1 {
+    margin-right: 30px;
 }
